@@ -12,6 +12,7 @@ The model consists of 3 submodels :
 - All the images from the dataset are passed through the image model and the outputs are stored to reduce the training time. This is done by feeding in the precomputed image embeddings during training rather than passing the image through the image model each epoch
 - The model converges with a loss crossentropy_loss of 2.33 after training for about 5 epochs with lr=1e-4 and Adam optimizer
 - Further improvement can been achieved by unfreezing the image model and training end to end
+- Beam search reference: https://github.com/yashk2810/Image-Captioning
 
 # Results
 ![](outputs/COCO_val2014_000000091349.jpg)
@@ -28,3 +29,5 @@ The model consists of 3 submodels :
 # To-do
  - [ ] Train the entire model end to end
  - [ ] Experiment with attention layers and Gated Recurrent Units
+
+
